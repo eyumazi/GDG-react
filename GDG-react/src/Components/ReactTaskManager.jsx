@@ -7,7 +7,7 @@ const ReactTaskManager = () => {
   const [description, setDescription] = useState("");
   const [edit, setEdit] = useState(false);
   const [editindex, setEditIndex] = useState(null);
-  const status = "incomplete";
+  const status = "Incomplete";
 
   const handleEdit = (index) => {
     const tasks = task[index];
