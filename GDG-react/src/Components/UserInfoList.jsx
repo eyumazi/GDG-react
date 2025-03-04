@@ -1,8 +1,14 @@
 import userProfiles from "./UserProfiles";
 import "../UserInfoList.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const UserInfoList = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (userId) => {
+    navigate(`/UserInfo/${userId}`);
+  };
+
   return (
     <>
       <div className="container">
@@ -10,13 +16,13 @@ export const UserInfoList = () => {
         <h3>Click on the one to see details</h3>
         <ul className="list-container">
           {userProfiles.map((user, i) => (
-            <Link key={i} to={`/UserInfo/${user.userId}`}>
-              <div className="listItem">
-                <li> User Id: {user.userId} </li>
-                <li> User Name: {user.name} </li>
-                <li> User Email: {user.email} </li>
-              </div>
-            </Link>
+            <li key={i} className="listItem">
+              <button onClick={() => handleNavigation(user.userId)}>
+                <div> User Id: {user.userId} </div>
+                <div> User Name: {user.name} </div>
+                <div> User Email: {user.email} </div>
+              </button>
+            </li>
           ))}
         </ul>
       </div>
