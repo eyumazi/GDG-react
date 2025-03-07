@@ -24,7 +24,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  background: rgb(0, 0, 0);
 }
 
 nav ul {
@@ -41,19 +41,27 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: rgb(143, 169, 251);
   font-weight: bold;
   padding: 24px 32px;
 }
 
 nav a:hover {
-  background: black;
-  color: rgb(189, 189, 189);
+  background: rgba(12, 158, 255, 0.338);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 .nav-right {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 

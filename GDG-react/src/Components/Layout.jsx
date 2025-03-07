@@ -7,11 +7,11 @@ const Layout = () => {
   const { light } = useTheme();
   return (
     <div
-      style={
-        light 
-          ? { background: "white", color: "black", width: "100%" }
-          : { background: "black", color: "white", width: "100%" }
-      }
+      // style={
+      //   light 
+      //     ? { background: "white", color: "black", width: "100%" }
+      //     : { background: "black", color: "white", width: "100%" }
+      // }
     >
       <div className="App">
         <Nav />
