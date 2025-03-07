@@ -1,10 +1,10 @@
-import { Home } from "./Home";
-import { About } from "./About";
-import { Contact } from "./Contact";
-import { UserInfoList } from "./UserInfoList";
-import { UserInfo } from "./UserInfo";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
+import { UserInfoList } from "./pages/UserInfoList";
+import { UserInfo } from "./pages/UserInfo";
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "./Layout";
+import Layout from "./Components/Layout";
 
 const routes = createBrowserRouter([
   {

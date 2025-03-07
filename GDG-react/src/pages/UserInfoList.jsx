@@ -1,4 +1,4 @@
-import userProfiles from "./UserProfiles";
+import userProfiles from "../Components/UserProfiles";
 import "../UserInfoList.css";
 import { useNavigate } from "react-router-dom";
 

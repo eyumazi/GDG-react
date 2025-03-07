@@ -1,4 +1,4 @@
-import userProfiles from "./UserProfiles";
+import userProfiles from "../Components/UserProfiles";
 import "../UserInfoList.css";
 import { useParams } from "react-router-dom";
 import { Page404 } from "./Page404";
