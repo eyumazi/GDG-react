@@ -26,6 +26,9 @@ const Nav = () => {
             <Link to="/UserInfoList">UserInfoList</Link>
           </li>
           <li>
+            <Link to="/user">Login</Link>
+          </li>
+          <li>
             <button className="theme-toggle" onClick={toggleTheme}>
               <span className="material-symbols-outlined animate-logo">
                 {black ? "light_mode" : "dark_mode"}
@@ -49,6 +52,15 @@ const Nav = () => {
           color: var(--color);
           background-color: var(--backgroundColor);
         }
+          .login-form{
+          color: var(--color);
+          background-color: var(--backgroundColor);
+          }
+          .form-input
+          {
+          color: var(--color);
+          background-color: var(--backgroundColor);
+          }
         nav {
           background-color: var(--backgroundColor);
         }
@@ -59,7 +71,19 @@ const Nav = () => {
         background-color: var(--backgroundColor);
         color: var(--color);
         border: none;
-      }
+        } 
+         .profile-view {
+          color: var(--color);
+          background-color: var(--backgroundColor);
+        }
+          .profile-view h2{
+           color: var(--color);
+          background-color: var(--backgroundColor);
+          }
+          .profile-view h1{
+           color: var(--color);
+          background-color: var(--backgroundColor);
+          }
       `}</style>
     </>
   );

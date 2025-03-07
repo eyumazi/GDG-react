@@ -5,17 +5,19 @@ import { UserInfoList } from "./pages/UserInfoList";
 import { UserInfo } from "./pages/UserInfo";
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "./Components/Layout";
+import LogIn from "./pages/User";
 
 const routes = createBrowserRouter([
   {
-    path: "",
+    path: "/",
     element: <Layout />,
     children: [
-      { path: "", element: <Home /> },
-      { path: "/about", element: <About /> },
-      { path: "/contact", element: <Contact /> },
-      { path: "/UserInfoList", element: <UserInfoList /> },
-      { path: "/UserInfo/:userId", element: <UserInfo /> },
+      { path: "/", element: <Home /> },
+      { path: "about", element: <About /> },
+      { path: "contact", element: <Contact /> },
+      { path: "user", element: <LogIn /> },
+      { path: "UserInfoList", element: <UserInfoList /> },
+      { path: "UserInfo/:userId", element: <UserInfo /> },
     ],
   },
 ]);
