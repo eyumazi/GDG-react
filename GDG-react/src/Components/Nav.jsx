@@ -29,6 +29,12 @@ const Nav = () => {
             <Link to="/user">Login</Link>
           </li>
           <li>
+            <Link to="/livesearch">liveSearch</Link>
+          </li>
+          <li>
+            <Link to="/counter">Character_Counter</Link>
+          </li>
+          <li>
             <button className="theme-toggle" onClick={toggleTheme}>
               <span className="material-symbols-outlined animate-logo">
                 {black ? "light_mode" : "dark_mode"}
@@ -56,7 +62,7 @@ const Nav = () => {
           color: var(--color);
           background-color: var(--backgroundColor);
           }
-          .form-input
+        input
           {
           color: var(--color);
           background-color: var(--backgroundColor);

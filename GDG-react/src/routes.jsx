@@ -6,7 +6,8 @@ import { UserInfo } from "./pages/UserInfo";
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "./Components/Layout";
 import LogIn from "./pages/User";
-
+import { LiveSearch } from "./Components/liveSearch";
+import { CharacterCount } from "./Components/CharacterCount";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +19,8 @@ const routes = createBrowserRouter([
       { path: "user", element: <LogIn /> },
       { path: "UserInfoList", element: <UserInfoList /> },
       { path: "UserInfo/:userId", element: <UserInfo /> },
+      { path: "liveSearch", element: <LiveSearch /> },
+      { path: "counter", element:<CharacterCount/>}
     ],
   },
 ]);
