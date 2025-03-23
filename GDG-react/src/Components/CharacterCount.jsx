@@ -83,7 +83,7 @@ export const CharacterCount = () => {
     },
     buttonHover: {
       backgroundColor: "#0056b3",
-      boxShadow: "0 0 5px rgba(0, 123, 255, 0.5)",
+      boxShadow: "0 0 5px rgba(0, 123, 255, 0.5)"
     },
   };
 

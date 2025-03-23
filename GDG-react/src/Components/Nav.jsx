@@ -35,6 +35,9 @@ const Nav = () => {
             <Link to="/counter">Character_Counter</Link>
           </li>
           <li>
+            <Link to="/API">Movie_API</Link>
+          </li>
+          <li>
             <button className="theme-toggle" onClick={toggleTheme}>
               <span className="material-symbols-outlined animate-logo">
                 {black ? "light_mode" : "dark_mode"}

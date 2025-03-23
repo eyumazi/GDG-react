@@ -8,6 +8,7 @@ import Layout from "./Components/Layout";
 import LogIn from "./pages/User";
 import { LiveSearch } from "./Components/liveSearch";
 import { CharacterCount } from "./Components/CharacterCount";
+// import { MovieAPI } from "./pages/MovieAPI";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +21,8 @@ const routes = createBrowserRouter([
       { path: "UserInfoList", element: <UserInfoList /> },
       { path: "UserInfo/:userId", element: <UserInfo /> },
       { path: "liveSearch", element: <LiveSearch /> },
-      { path: "counter", element:<CharacterCount/>}
+      { path: "counter", element: <CharacterCount /> },
+      // { path: "API", element: <MovieAPI /> },
     ],
   },
 ]);
