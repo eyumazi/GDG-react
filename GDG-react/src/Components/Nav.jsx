@@ -38,6 +38,9 @@ const Nav = () => {
             <Link to="/API">Movie_API</Link>
           </li>
           <li>
+            <Link to="/wishlist">Wishlist</Link>
+          </li>
+          <li>
             <button className="theme-toggle" onClick={toggleTheme}>
               <span className="material-symbols-outlined animate-logo">
                 {black ? "light_mode" : "dark_mode"}
@@ -55,7 +58,9 @@ const Nav = () => {
         }
         :root {
           --color: ${black ? "white" : "black"};
+          --colors: ${black ? "black" : "white"};
           --backgroundColor: ${black ? "black" : "white"};
+          --backgroundColors: ${black ? "white" : "black"};
         }
         body {
           color: var(--color);
@@ -92,6 +97,11 @@ const Nav = () => {
           .profile-view h1{
            color: var(--color);
           background-color: var(--backgroundColor);
+          }
+          button
+          {
+           color: var(--colors);
+          background-color: var(--backgroundColors);
           }
       `}</style>
     </>
